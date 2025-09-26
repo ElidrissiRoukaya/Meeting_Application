@@ -17,7 +17,7 @@ It allows users to:
 
 ---
 
-## 🛠️ Requirements
+##  Requirements
 - **Java 17+** and **Spring Boot** for backend
 - **A ZegoCloud account** → sign up [here](https://www.zegocloud.com/)
 - Create a new **Zego App** to get your:
@@ -31,12 +31,11 @@ It allows users to:
 
 ##  How the App Works
 
-1. **Register & Login** 📝
+1. **Register & Login** 
 - New users can **sign up** or **log in** with their account.
 - Once logged in, the app keeps track of your session.
 
 ![Register Screenshot](illustrations/register.png)  
-![Login Screenshot](illustrations/login.png)
 
 
 2. **Home Page** 
