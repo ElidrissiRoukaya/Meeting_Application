@@ -1,0 +1,182 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    margin: 0;
+    padding: 50px 20px 50px 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.header-image img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+/* === Actions de réunion === */
+.meeting-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.meeting-actions input[type="text"] {
+    flex: 1;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.meeting-actions input[type="text"]:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+}
+
+.meeting-actions button {
+    padding: 14px 25px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Boutons avec dégradé harmonisé */
+#newMeetingBtn {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+#newMeetingBtn:hover {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+#joinMeetingBtn {
+    background: linear-gradient(135deg, #6dd47e, #2aa14f);
+}
+#joinMeetingBtn:hover {
+    background: linear-gradient(135deg, #2aa14f, #6dd47e);
+}
+
+#logoutBtn {
+    background: linear-gradient(135deg, #f56c6c, #d94f4f);
+    padding: 14px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 25px auto;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+#logoutBtn:hover {
+    background: linear-gradient(135deg, #d94f4f, #f56c6c);
+}
+
+/* === Utilisateurs connectés === */
+.connected-users {
+    flex: 1;
+    max-width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #e3f2fd);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.connected-users:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.connected-users h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #1e88e5;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Style pour la liste */
+.connected-users ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #ffffff, #e0f7fa);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Effet au survol */
+.user-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.user-card .user-name {
+    font-weight: 600;
+    color: #00796b;
+}
+
+
+.user-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.user-circle.online {
+    background-color: #6dd47e;
+}
+.user-circle.offline {
+    background-color: #cccccc;
+}
+
+.user-email {
+    font-size: 15px;
+    color: #555;
+}

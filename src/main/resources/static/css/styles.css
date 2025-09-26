@@ -1,0 +1,154 @@
+/* === RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #333;
+}
+
+/* === CONTAINER === */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* === LOGIN FORM === */
+.login-form {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.login-form h2 {
+    margin-bottom: 25px;
+    color: #2575fc;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Inputs */
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+}
+
+/* Button */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.login-form button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Links */
+.login-form p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.login-form a {
+    color: #2575fc;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.login-form a:hover {
+    color: #6a11cb;
+}
+
+/* === SOCIAL ICONS === */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icons h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #2575fc;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: #2575fc;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-2px);
+    background: #6a11cb;
+}
+
+/* === EMAIL TEXT STYLE === */
+.user-email {
+    font-size: 14px !important;
+    color: #555;
+}
+
+/* === ANIMATION === */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .login-form, .social-icons {
+        width: 100%;
+        max-width: 100%;
+    }
+}
